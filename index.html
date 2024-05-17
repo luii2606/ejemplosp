@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="controlador"method="get">
+  <form action="controlador"method="post"> 
 
     <div>
   <label for Nombre>Nombre :</label>
@@ -15,12 +15,12 @@
 </div>
 
   <div>
-  <label for Nombre>ingrese su edad :</label>
+  <label for Nombre>Ingrese su edad :</label>
   <input type="number" step="1.0" min="0" max="20" values="10" name="edad" autofocus >
 </div>
 
   <div>
-  <label fro Color>seleccione un color:</label>
+  <label fro Color>Seleccione un color:</label>
   <input type="color"> 
 </div>
 
@@ -30,11 +30,49 @@
 </div>
 
   <div>
-  <label for telefono> telefono :</label>
-  <input type="text" id="numero" pattern="[0,9][0,10]" required>
+  <label for="tele"> ingrese sutelefono :</label>
+  <input type="text" id="number" name="telefono" pattern="[0-9]{0,10}" required>
   </div>
+
+ <div>
+  <label>seleccione la ciudad</label>
+  <select name="ciudad" id="ciudad" disabled>
+    <option value="1"> Giron</option>
+    <option value="2" selected>Bucaramanga</option>
+  </select>
+ </div>
+
+ <div>
+   <label>
+  <input type="radio" id= "checked" name="genero" value="Hombre" >Hombre
+</label>
+  <label>
+    <input type="radio" id ="checked" name="genero" value="Mujer">Mujer
+  </label>
+ </div>
   
-  <div> 
+ <div>
+  <label>
+    <input type="checkbox" id ="checked" name="habilidad" value="HTML">HTML
+  </label>
+   
+    <label>
+      <input type="checkbox" id ="checked" name="habilidad" value="GIT">GIT
+    </label>
+      <label>
+      <input type="checkbox" id ="checked" name="habilidad" value="CLI">CLI
+    </label>
+       <label>
+      <input type="checkbox" id ="checked" name="habilidad" value="JS">JS
+    </label>
+    
+ </div>
+ <div>
+    <input accept="image" type="file" multiple>
+
+  </imput>
+ </div>
+   <div> 
 <button type="submit">Guardar</button> 
 </div>
   
