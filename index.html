@@ -6,9 +6,37 @@
   <title>Document</title>
 </head>
 <body>
-  hola
-  <a>
-    <link rel="formulario.html" href="">
-  </a>
+  <form action="controlador"method="get">
+
+    <div>
+  <label for Nombre>Nombre :</label>
+   <input type="text" name="nombre" required placeholder="escriba su nombre" id="nombre" autofocus autocomplete>
+  <for id nombre></for> 
+</div>
+
+  <div>
+  <label for Nombre>ingrese su edad :</label>
+  <input type="number" step="1.0" min="0" max="20" values="10" name="edad" autofocus >
+</div>
+
+  <div>
+  <label fro Color>seleccione un color:</label>
+  <input type="color"> 
+</div>
+
+<div>
+  <label for Email> Email:</label>
+<input type="text" id="email" name="email" patttern = "[a-A-Z0-9._%+-]+@gmail.com]" required>
+</div>
+
+  <div>
+  <label for telefono> telefono :</label>
+  <input type="text" id="numero" pattern="[0,9][0,10]" required>
+  </div>
+  
+  <div> 
+<button type="submit">Guardar</button> 
+</div>
+  
+</form>
 </body>
-</html>
